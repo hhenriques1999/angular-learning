@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'hinv-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  // template: `<button>Hello World, templated inline!</button>
+  // <p>Angular is awesome!</p>
+  // `,
+  styleUrls: ['./app.component.scss'],
+  // styles: [`h1 { color: red;}`]
 })
 export class AppComponent {
   title = 'hotelinventoryapp';

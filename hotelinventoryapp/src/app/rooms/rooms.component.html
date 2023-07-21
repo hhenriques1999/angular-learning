@@ -1,0 +1,13 @@
+<h1>Welcome to {{hotelName}}</h1>
+
+<div [hidden]="hideRooms">
+    Number of Rooms: 
+    <div [innerText]="numbersOfRooms"></div>
+</div>
+
+<div class="d-flex gap-2">
+    <button class="btn btn-warning" (click)="toggle()">Toggle</button>
+    <button class="btn btn-warning" (click)="increaseRooms()">+</button>
+    <button class="btn btn-warning" (click)="decreaseRooms()">-</button>
+</div>
+
