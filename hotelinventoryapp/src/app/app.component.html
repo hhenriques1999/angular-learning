@@ -1,3 +1,11 @@
-<div class="d-flex flex-column align-items-center mt-5">
-  <hinv-rooms></hinv-rooms>
+<h1>Hello World!</h1>
+
+<div [ngSwitch]="role">
+  <div *ngSwitchCase="'User'">Welcome User!</div>
+  <div *ngSwitchCase="'Admin'">
+    <hinv-rooms></hinv-rooms>
+  </div>
+  <div *ngSwitchDefault>
+    You are not authorized to view this page!
+  </div>
 </div>
