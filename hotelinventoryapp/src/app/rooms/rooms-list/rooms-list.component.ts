@@ -10,7 +10,7 @@ export class RoomsListComponent implements OnInit {
 
   @Input() rooms: Room[] = [];
 
-  @Output() selectedRoom : EventEmitter<Room> = new EventEmitter<Room>();
+  @Output() selectedRoom: EventEmitter<Room> = new EventEmitter<Room>();
 
   constructor() {
 
