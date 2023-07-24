@@ -71,4 +71,9 @@ export class RoomsComponent implements OnInit {
     availableRooms: 10,
     bookedRooms: 5,
   };
+
+  selectRoom(room: Room) {
+    console.log(room);
+    
+  }
 }
