@@ -10,7 +10,6 @@
             <th>Checkin Time</th>
             <th>Checkout Time</th>
             <th>Rating</th>
-            <th>Select Room</th>
         </tr>
     </thead>
     <tbody>
@@ -29,9 +28,6 @@
             <td>{{ room.checkinTime | date }}</td>
             <td>{{ room.checkoutTime | date : "dd/MM/yyyy" }}</td>
             <td>{{ room.rating | number : '1.1-2' : 'en-US' }}</td>
-            <td>
-                <button class="btn btn-primary" (click)="selectRoom(room)">Select</button>
-            </td>
         </tr>
     </tbody>
 </table>
