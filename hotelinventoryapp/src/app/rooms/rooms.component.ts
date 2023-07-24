@@ -19,6 +19,8 @@ export class RoomsComponent implements OnInit {
 
   hideRooms: boolean = false;
 
+  selectedRoom!: Room;
+
   ngOnInit(): void {
     this.rooms = [
       {
@@ -73,7 +75,7 @@ export class RoomsComponent implements OnInit {
   };
 
   selectRoom(room: Room) {
-    console.log(room);
+    this.selectedRoom = room;
 
   }
 }

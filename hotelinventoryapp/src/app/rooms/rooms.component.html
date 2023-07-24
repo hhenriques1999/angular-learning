@@ -7,6 +7,10 @@
     </div>
 </div>
 
+<div *ngIf="selectedRoom">
+    {{selectedRoom | json}}
+</div>
+
 <!-- {{ rooms | json }} -->
 
 <div *ngIf="roomInfo.availableRooms > 0">
