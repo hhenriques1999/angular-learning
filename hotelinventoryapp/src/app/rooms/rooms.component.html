@@ -18,8 +18,7 @@
 <!-- {{ rooms | json }} -->
 
 <div *ngIf="roomInfo.availableRooms > 0">
-    Rooms List:
-    <hinv-rooms-list [rooms]="rooms" (selectedRoom)="selectRoom($event)"></hinv-rooms-list>
+    <hinv-rooms-list [rooms]="rooms" [title]="title" (selectedRoom)="selectRoom($event)"></hinv-rooms-list>
 </div>
 
 <button class="btn btn-primary" (click)="toggle()">Toggle</button>

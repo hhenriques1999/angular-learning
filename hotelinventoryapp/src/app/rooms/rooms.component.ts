@@ -21,6 +21,8 @@ export class RoomsComponent implements OnInit {
 
   selectedRoom!: Room;
 
+  title = "Room List";
+
   ngOnInit(): void {
     this.rooms = [
       {
@@ -58,6 +60,7 @@ export class RoomsComponent implements OnInit {
 
   toggle() {
     this.hideRooms = !this.hideRooms;
+    this.title = "Rooms";
   }
 
   increaseRooms() {
