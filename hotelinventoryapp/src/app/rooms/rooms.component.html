@@ -11,6 +11,10 @@
     {{selectedRoom | json}}
 </div>
 
+<div>
+    <button class="btn btn-primary" (click)="addRoom()">Add Room</button>
+</div>
+
 <!-- {{ rooms | json }} -->
 
 <div *ngIf="roomInfo.availableRooms > 0">

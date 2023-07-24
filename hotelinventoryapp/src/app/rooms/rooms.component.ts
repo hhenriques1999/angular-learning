@@ -64,8 +64,23 @@ export class RoomsComponent implements OnInit {
     this.numbersOfRooms += 1;
   }
 
-  decreaseRooms() {
+  decreaseRooms() : void {
     this.numbersOfRooms -= 1;
+  }
+
+  addRoom() : void {
+    const room: Room = {
+      roomNumber: 4,
+      roomType: 'Deluxe Room',
+      amenities: "Stuff af",
+      price: 300,
+      photos: "",
+      checkinTime: new Date('21-Nov-2023'),
+      checkoutTime: new Date('23-Dec-2023'),
+      rating: 4.4,
+    };
+    // this.rooms.push(room);
+    this.rooms = [...this.rooms, room]; // This means, keep the existing array (spread the existing array), create a new array and add the new record to it
   }
 
   roomInfo: RoomInfo = {

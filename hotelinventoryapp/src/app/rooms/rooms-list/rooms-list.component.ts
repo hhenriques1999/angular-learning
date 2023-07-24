@@ -1,10 +1,11 @@
-import { Component, Input, Output, OnInit, EventEmitter } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, Output, OnInit, EventEmitter } from '@angular/core';
 import { Room } from '../rooms';
 
 @Component({
   selector: 'hinv-rooms-list',
   templateUrl: './rooms-list.component.html',
-  styleUrls: ['./rooms-list.component.scss']
+  styleUrls: ['./rooms-list.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RoomsListComponent implements OnInit {
 
